@@ -15,62 +15,80 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="py-[50px] px-[120px]">
+<body class="py-[100px] px-[120px]">
     <header class="headers">
         <nav class="nav-bar flex gap-x-16 items-center">
             <div class="nav-1 not-italic font-medium text-2xl leading-10 text-gray-800">UI.desk</div>
             <div class="nav-2 flex gap-x-6 "><a href="#"
                     class=" not-italic font-medium text-xl leading-7 text-green-500">Home</a>
-                <a href="#" class="not-italic font-normal text-xl leading-7 text-gray-800">About</a>
-                <a href="#" class="not-italic font-normal text-xl leading-7 text-gray-800">Contact</a>
-                <a href="#" class="not-italic font-normal text-xl leading-7 text-gray-800">Testimonials</a>
+                <a href="index3.html" class="not-italic font-normal text-xl leading-7 text-gray-800">Search</a>
+                <a href="./index3,4,5,6/index4.html" class="not-italic font-normal text-xl leading-7 text-gray-800">Marketplace</a>
+                <a href="/index3,4,5,6/analytics.html" class="not-italic font-normal text-xl leading-7 text-gray-800">Testimonials</a>
             </div>
-            <div class="nav-3 px-[150px] flex gap-x-3">
+            <div class="nav-3 px-[150px] flex gap-x-3 invisible sm:visible">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <div class="nav-4"><button
                     class="bg-gray-700 rounded-[27px] px-[20px] py-[10px] not-italic font-normal  leading-7 text-white"><a
                         href="#" class="">Order</a> </button></div>
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <div class="lg:hidden" role="dialog" aria-modal="true">
-                <!-- Background backdrop, show/hide based on slide-over state. -->
-                <div class="fixed inset-0 z-10"></div>
-                <div
-                    class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm  sm:ring-1 sm:ring-gray-900/10">
-                    <div class="flex items-center justify-center    ">
-                        <a href="#" class="-m-1.5 p-1.5">
-                            <span class="sr-only">Your Company</span>
-                            <img class="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                        </a>
-                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Close menu</span>
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+         
+   <!-- Mobile menu, show/hide based on menu open state. -->
+   <div class="sm:hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed z-10"></div>
+    <div
+        class="fixed mt-[-50px] right-0 z-10 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-center">
+            <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="" />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="mt-6 flow-root">
+            <div class="-my-6  divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                    <div class="div-nav-1 flex items-center gap-x-5"> <a href="index2.html"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Search</a>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div class="mt-6 flow-root">
-                        <div class="-my-6 divide-y divide-gray-500/10">
-                            <div class="space-y-2 py-6">
-                                <div class="div-nav-1 flex items-center gap-x-5"> <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Search</a>
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                                <div class="div-nav-2 flex items-center gap-x-6"> <a href="#"
-                                        class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                                    <i class="fa-solid fa-cart-shopping"></i></div>
-
-                            </div>
+                    <div class="div-nav-2 flex items-center gap-x-6"> <a href="#"
+                            class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                        <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="div-nav-2 flex items-center">   <button
+                            class="bg-gray-700 rounded-[27px] px-[20px] py-[10px] not-italic font-normal  leading-7 text-white"><a
+                                href="#" class="">Order</a> </button>
                         </div>
-                    </div>
+        
                 </div>
-            </div>
+         </div>       
+                       
         </nav>
     </header>
-
+<main class="py-[250px]">
+    <section class="s2 px-[200px] lg:px-[100px]">
+        <div class="div-s2 container">
+      <div class="food-desc grid columns-1  lg:flex columns-2">
+    <div class="div-desc-s2  sm-max:text-center text-base ">
+      <h2 class="not-italic text-gray-900   font-bold text-6xl w-[596px]">Just <span class="span-desc text-green-500">Eat healthy</span> food to live a healthier life</h2>
+      <p class="p not-italic text-2xl leading-8 text-gray-900 w-[596px]">Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life healthier for today and in the future</p>
+      <button
+                    class="bg-gray-700 rounded-[27px] px-[20px] py-[10px] not-italic font-normal  leading-7 text-white w-[170px]"><a
+                        href="#" class="">Order</a> </button>
+    </div>
+    <div class="div-descs"><img src="/index3,4,5,6/header Image.png" alt="yummy" width="500" height="500" ></div>
+      </div>
+        </div>
+    </section>
+</main>
 </body>
 
 </html>
